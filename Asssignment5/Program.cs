@@ -59,6 +59,11 @@
             //return sum;
             //return Mul; // invalid
         }
+        public static void SumAndSub(int no1, int no2,out int sum,out int sub)
+        {
+            sum=no1 + no2;
+            sub = no1 - no2;
+        }
         static void Main(string[] args)
         {
             #region Demo
@@ -263,6 +268,15 @@
             //Console.WriteLine(SumOfArray(ref Numbers));
             //Console.WriteLine(Numbers[0]);
             #endregion
+            #endregion
+            #region Q3
+            //3-Write a c# Function that accept 4 parameters from user and return result of summation and subtracting of two numbers
+            int x = 10;
+            int y = 5;
+            int sum ;
+            int sub ;
+            SumAndSub(x,y,out sum,out sub);
+            Console.WriteLine($"summation is = {sum} and sub is = {sub}");
             #endregion
 
             #endregion
