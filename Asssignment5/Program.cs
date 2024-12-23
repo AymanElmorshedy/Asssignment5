@@ -1,4 +1,6 @@
-﻿namespace Asssignment5
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Asssignment5
 {
     internal class Program
     {
@@ -76,6 +78,25 @@
             }
             return true;
             
+        }
+        public static void MaxAndMinArray(ref int[] array,out int max,out int min)
+        {
+            int maxi = 0;
+            int Mini = int.MaxValue;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] > maxi)
+                {
+                    maxi=array[i];
+                }
+                if (array[i] < Mini)
+                {
+                    Mini=array[i];
+                }
+            }
+            max = maxi;
+            min = Mini;
+          
         }
         static void Main(string[] args)
         {
@@ -295,8 +316,16 @@
 
             #endregion
             #region Q5
-            //5-	Create a function named "IsPrime", which receives an integer number and retuns true if it is prime, or false if it is not:
-            Console.WriteLine(IsPrime(5)); 
+            //5-Create a function named "IsPrime", which receives an integer number and retuns true if it is prime, or false if it is not:
+            //Console.WriteLine(IsPrime(5)); 
+            #endregion
+            #region Q6
+            //6-Create a function named MinMaxArray, to return the minimum and maximum values stored in an array, using reference parameters
+            //int[] Numbers = { 1, 2, 3, 4, 5, 6, 7, 8 };
+            //MaxAndMinArray(ref Numbers, out int max, out int min);
+            //Console.WriteLine(max);
+            //Console.WriteLine(min);
+
             #endregion
 
             #endregion
