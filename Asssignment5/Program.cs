@@ -108,6 +108,16 @@ namespace Asssignment5
             }
             return result;
         }
+        public static int SumDigits(int Number)
+        {
+            int Sum = 0;
+            while (Number > 0)
+            {
+                Sum += Number % 10;
+                Number /= 10;
+            }
+            return Sum;
+        }
         static void Main(string[] args)
         {
             #region Demo
@@ -323,7 +333,7 @@ namespace Asssignment5
             //Console.WriteLine($"summation is = {sum} and sub is = {sub}");
             #endregion
             #region Q4
-
+            //Console.WriteLine(SumDigits(25));
             #endregion
             #region Q5
             //5-Create a function named "IsPrime", which receives an integer number and retuns true if it is prime, or false if it is not:
@@ -338,9 +348,13 @@ namespace Asssignment5
 
             #endregion
             #region Q7
+            
+            //7 -Create an iterative(non-recursive) function to calculate the factorial of the number specified as parameter
+
             Console.WriteLine(Factorial(5));
             #endregion
             #region Q8
+            //8-Create a function named "ChangeChar" to modify a letter in a certain position (0 based) of a string, replacing it with a different letter
 
             #endregion
 
