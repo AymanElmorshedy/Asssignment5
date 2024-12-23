@@ -251,6 +251,19 @@
             //Console.WriteLine(B);
             #endregion
             #endregion
+            #region Q2
+            //2-Explain the difference between passing (Reference type parameters) by value and by reference then write a suitable c# example.
+            #region By value
+            //int[] Numbers = { 1, 2, 3 };
+            //Console.WriteLine(SumOfArray(Numbers));
+            //Console.WriteLine(Numbers[0]);
+            #endregion
+            #region By reference
+            //int[] Numbers = { 1, 2, 3 };
+            //Console.WriteLine(SumOfArray(ref Numbers));
+            //Console.WriteLine(Numbers[0]);
+            #endregion
+            #endregion
 
             #endregion
         }
