@@ -222,11 +222,35 @@
             //Console.WriteLine(Mul);
             #endregion
             #region Function-Params
-            int[] Numbers = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            Console.WriteLine(SumOfArray( 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ));
+            //int[] Numbers = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //Console.WriteLine(SumOfArray( 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ));
 
             #endregion
 
+
+            #endregion
+            #region Assignment
+            #region Q1
+            //1-	Explain the difference between passing (Value type parameters) by value and by reference then write a suitable c# example.
+            #region ByValue
+            //int A = 10;
+            //int B = 20;
+            //Console.WriteLine(A);
+            //Console.WriteLine(B);
+            //Swap(A, B);
+            //Console.WriteLine(A);
+            //Console.WriteLine(B); 
+            #endregion
+            #region By reference
+            //int A = 10;
+            //int B = 20;
+            //Console.WriteLine(A);
+            //Console.WriteLine(B);
+            //Swap(ref A,ref B);
+            //Console.WriteLine(A);
+            //Console.WriteLine(B);
+            #endregion
+            #endregion
 
             #endregion
         }
