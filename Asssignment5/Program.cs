@@ -64,6 +64,19 @@
             sum=no1 + no2;
             sub = no1 - no2;
         }
+        public static bool IsPrime(int Number)
+        {
+            for (int i = 2; i < Number; i++)
+            {
+                if (Number % i == 0)
+                {
+                    return false;
+                }
+               
+            }
+            return true;
+            
+        }
         static void Main(string[] args)
         {
             #region Demo
@@ -271,12 +284,19 @@
             #endregion
             #region Q3
             //3-Write a c# Function that accept 4 parameters from user and return result of summation and subtracting of two numbers
-            int x = 10;
-            int y = 5;
-            int sum ;
-            int sub ;
-            SumAndSub(x,y,out sum,out sub);
-            Console.WriteLine($"summation is = {sum} and sub is = {sub}");
+            //int x = 10;
+            //int y = 5;
+            //int sum ;
+            //int sub ;
+            //SumAndSub(x,y,out sum,out sub);
+            //Console.WriteLine($"summation is = {sum} and sub is = {sub}");
+            #endregion
+            #region Q4
+
+            #endregion
+            #region Q5
+            //5-	Create a function named "IsPrime", which receives an integer number and retuns true if it is prime, or false if it is not:
+            Console.WriteLine(IsPrime(5)); 
             #endregion
 
             #endregion
