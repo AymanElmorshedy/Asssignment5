@@ -98,6 +98,16 @@ namespace Asssignment5
             min = Mini;
           
         }
+        public static long Factorial(int Number)
+        {
+            long result = 1;
+            
+            for (int i = 1; i <= Number; i++)
+            {
+                result *= i;
+            }
+            return result;
+        }
         static void Main(string[] args)
         {
             #region Demo
@@ -325,6 +335,12 @@ namespace Asssignment5
             //MaxAndMinArray(ref Numbers, out int max, out int min);
             //Console.WriteLine(max);
             //Console.WriteLine(min);
+
+            #endregion
+            #region Q7
+            Console.WriteLine(Factorial(5));
+            #endregion
+            #region Q8
 
             #endregion
 
